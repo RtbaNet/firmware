@@ -4,6 +4,7 @@
 		<title>RtbaNet[Firmware] - Principal</title>
 		<link rel="shortcut icon" href="./favicon.ico">
 		<link href="./style.css" rel="stylesheet" type="text/css">
+		<script type="text/javascript" language="javascript" src="./util.js.download"></script>
 	</head>
 	<body background="./backgnd.PNG">
 		<table class="maintable" cellpadding="0" align="center" cellspacing="0">
@@ -20,10 +21,15 @@
 					<td height="26">
 						<a href="RtbaNetBM2 - Principal.html"><img src="main_top.png" alt="Principal" border="0"></a>
 						<a href=".\RtbaNetFirmware - Roteador.html"><img src="main_top.png" alt="FirmwareRoteador" border="0"></a>
-						
 					</td>
 					<td align="right" valign="top">
-						<input type="submit" id="logout" onclick="location.href='./index.html'" value="Logout" >
+						<select id="tools" onchange="showTool(this);">
+							<option value="" >Ferramentas:</option>
+							<option value="https://rtbanet.github.io/Software/">Software...</option>
+							<option value="https://rtbanet.github.io/SpeedTest/">SpeedTest...</option>
+							<option value="https://rtbanet.github.io/firmware/" >Firmware...</option>
+							<input type="submit" id="logout" onclick="location.href='./index.html'" value="Logout" >
+						</select>
 					</td>
 				</tr>
 				<tr> 
